@@ -21,7 +21,7 @@ import Layout from '../layouts/Layout.astro';
     <section class="hero">
       <div class="container hero-container">
         <div class="hero-content">
-          <p class="slogan">Critical Operational Support</p>
+          <p class="slogan">A Dazzling Support for Your Project</p>
           <h1 class="display-title">
             Engineering the <span class="text-gradient">Shadow Wave</span> of the Web
           </h1>
@@ -31,7 +31,7 @@ import Layout from '../layouts/Layout.astro';
             so your business can shine in the light.
           </p>
           <div class="hero-actions">
-            <a href="#services" class="btn btn-primary">Initialize Protocol</a>
+            <a href="#contact" class="btn btn-primary">BUFF YOUR PROJECT</a>
             <a href="#expertise" class="btn btn-secondary">View Capabilities</a>
           </div>
         </div>
@@ -143,6 +143,101 @@ import Layout from '../layouts/Layout.astro';
             <h3 class="service-title">Software Engineering & Management</h3>
             <p class="service-text">Define a clear technical path for your project, based on real engineering. Transform your goals into strategic decisions, reduce risks, manage stakeholders and align your team with targets. Improve efficiency, boost profits.</p>
             <a href="#" class="service-link">Define Your Path <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Dazzled Projects -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Dazzled Projects</h2>
+          <p class="section-subtitle">Help arrived. Buffs applied.</p>
+        </div>
+        
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="card project-card">
+            <div class="project-header">
+              <span class="status-tag status-live"><span class="status-dot"></span> Live</span>
+              <h3 class="project-title">StaffLink</h3>
+            </div>
+            <p class="project-description">A comprehensive staff management system with automated scheduling, role-based access control, and performance analytics.</p>
+            <div class="project-spells">
+              <span class="spell-tag">React</span>
+              <span class="spell-tag">Node.js</span>
+              <span class="spell-tag">PostgreSQL</span>
+            </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="card project-card">
+            <div class="project-header">
+              <span class="status-tag status-dev"><span class="status-dot"></span> In Dev</span>
+              <h3 class="project-title">Celestial Casters</h3>
+            </div>
+            <p class="project-description">An immersive web platform for a strategic card game, featuring real-time multiplayer lobbies and complex state management.</p>
+            <div class="project-spells">
+              <span class="spell-tag">Vue 3</span>
+              <span class="spell-tag">WebSockets</span>
+              <span class="spell-tag">Redis</span>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="card project-card">
+            <div class="project-header">
+              <span class="status-tag status-arch"><span class="status-dot"></span> Architecting</span>
+              <h3 class="project-title">FleetMan</h3>
+            </div>
+            <p class="project-description">Scalable microservices architecture for a logistics fleet tracking system. Designing event-driven data flows and high-availability databases.</p>
+            <div class="project-spells">
+              <span class="spell-tag">Go</span>
+              <span class="spell-tag">Kafka</span>
+              <span class="spell-tag">Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: About JZAP -->
+    <section id="expertise" class="about-section">
+      <div class="container about-container">
+        <div class="about-visual">
+          <div class="avatar-glow"></div>
+          <div class="avatar-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </div>
+        </div>
+        <div class="about-content">
+          <h2 class="section-title align-left">About JZAP</h2>
+          <p class="section-subtitle align-left">The story behind our supportive mindset.</p>
+          <div class="about-text">
+            <p>I don't just write code; I provide <strong>critical operational support</strong>. Throughout 8 years in the trenches of IT and Fullstack Development, I learned that the best engineers aren't just solo heroes—they are the force multipliers that make the entire team succeed.</p>
+            <p>The "Shadow Wave" philosophy was born from this realization. Like a dedicated healer in a raid, I anticipate system failures before they happen, buff the architecture for peak performance, and design interfaces that seamlessly guide the user.</p>
+            <p>Whether you need a robust backend, a stunning frontend, or a complete architectural overhaul, I go where I'm needed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: I go where I'm needed -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-card card">
+          <div class="contact-content">
+            <h2 class="display-title">I go where I'm needed.</h2>
+            <p class="contact-subtitle">Ask and you'll receive! Ready to buff your next big project?</p>
+            <div class="contact-actions">
+              <a href="mailto:operator@jzap.dev" class="btn btn-primary btn-large">Summon JZAP</a>
+              <div class="social-links">
+                <a href="#" class="social-link">LinkedIn</a>
+                <span class="separator">•</span>
+                <a href="#" class="social-link">GitHub</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -513,6 +608,219 @@ import Layout from '../layouts/Layout.astro';
     transform: translateX(4px);
   }
 
+  /* Projects Section */
+  .projects-section {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+  }
+  
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-lg);
+  }
+  
+  .project-header {
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .status-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-brand);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 4px 8px;
+    border-radius: var(--rounded-sm);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  
+  .status-live {
+    background: rgba(160, 35, 200, 0.15);
+    color: var(--electric-flash);
+    border: 1px solid rgba(160, 35, 200, 0.3);
+  }
+  .status-live .status-dot { background: var(--electric-flash); box-shadow: 0 0 6px var(--electric-flash); }
+  
+  .status-dev {
+    background: rgba(255, 172, 235, 0.15);
+    color: var(--primary);
+    border: 1px solid rgba(255, 172, 235, 0.3);
+  }
+  .status-dev .status-dot { background: var(--primary); }
+  
+  .status-arch {
+    background: rgba(162, 138, 151, 0.15);
+    color: var(--outline);
+    border: 1px solid rgba(162, 138, 151, 0.3);
+  }
+  .status-arch .status-dot { background: var(--outline); }
+  
+  .project-title {
+    font-size: 24px;
+    color: var(--on-surface);
+    margin: 0;
+  }
+  
+  .project-description {
+    font-size: 15px;
+    color: var(--on-surface-variant);
+    margin-bottom: var(--spacing-md);
+    flex-grow: 1;
+  }
+  
+  .project-spells {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-top: auto;
+  }
+  
+  .spell-tag {
+    font-size: 12px;
+    font-family: var(--font-body);
+    color: var(--on-surface-variant);
+    background: var(--surface-container-high);
+    padding: 4px 10px;
+    border-radius: var(--rounded-full);
+  }
+  
+  /* About Section */
+  .about-section {
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(180deg, var(--background) 0%, var(--surface-container-lowest) 100%);
+  }
+  
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+  }
+  
+  .about-visual {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .avatar-glow {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(168, 21, 155, 0.4) 0%, rgba(0,0,0,0) 70%);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .avatar-placeholder {
+    position: relative;
+    z-index: 2;
+    width: 200px;
+    height: 200px;
+    background: var(--surface-container);
+    border: 2px solid var(--surface-container-high);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--outline-variant);
+    overflow: hidden;
+  }
+  
+  .avatar-placeholder svg {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    font-size: 17px;
+    color: var(--on-surface-variant);
+  }
+  
+  .about-text strong {
+    color: var(--primary);
+    font-weight: 500;
+  }
+  
+  .align-left {
+    text-align: left;
+    justify-content: flex-start;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    padding: calc(var(--spacing-xl) * 2) 0;
+  }
+  
+  .contact-card {
+    background: linear-gradient(135deg, var(--surface-container-low) 0%, var(--surface-container-highest) 100%);
+    border: 1px solid var(--shadow-wave);
+    padding: calc(var(--spacing-xl) * 1.5);
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(168, 21, 155, 0.1);
+  }
+  
+  .contact-subtitle {
+    font-size: 20px;
+    color: var(--on-surface-variant);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .contact-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+  }
+  
+  .btn-large {
+    font-size: 18px;
+    padding: 16px 40px;
+  }
+  
+  .social-links {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+  }
+  
+  .social-link {
+    font-family: var(--font-brand);
+    font-size: 16px;
+    color: var(--on-surface-variant);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  
+  .social-link:hover {
+    color: var(--primary);
+  }
+  
+  .separator {
+    color: var(--surface-container-high);
+  }
+
   @media (max-width: 900px) {
     .hero-container {
       grid-template-columns: 1fr;
@@ -543,6 +851,24 @@ import Layout from '../layouts/Layout.astro';
     
     .services-grid {
       grid-template-columns: 1fr;
+    }
+    
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .about-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    
+    .about-content .align-left {
+      text-align: center;
+      justify-content: center;
+    }
+    
+    .contact-card {
+      padding: var(--spacing-xl) var(--spacing-md);
     }
   }
 </style>
