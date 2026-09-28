@@ -1,5 +1,7 @@
 ---
+
 ---
+
 <header class="navbar">
   <div class="container nav-container">
     <div class="logo">
@@ -23,25 +25,25 @@
     top: 0;
     width: 100%;
     padding: var(--spacing-md) 0;
-    background: rgba(26, 4, 22, 0.85);
+    background: var(--color-mystic);
     backdrop-filter: blur(12px);
     z-index: 100;
     border-bottom: 1px solid var(--surface-container-high);
   }
-  
+
   .nav-container {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
   }
-  
+
   .logo {
     display: flex;
     align-items: baseline;
     gap: var(--spacing-xs);
     justify-content: flex-start;
   }
-  
+
   .logo-text {
     font-family: var(--font-brand);
     font-size: 24px;
@@ -49,7 +51,7 @@
     letter-spacing: -0.05em;
     color: var(--on-background);
   }
-  
+
   .logo-dot {
     width: 6px;
     height: 6px;
@@ -57,14 +59,14 @@
     border-radius: var(--rounded-full);
     box-shadow: 0 0 8px var(--electric-flash);
   }
-  
+
   .nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: var(--spacing-lg);
   }
-  
+
   .nav-links a {
     font-family: var(--font-brand);
     font-size: 14px;
@@ -74,11 +76,11 @@
     color: var(--on-surface-variant);
     transition: color 0.2s ease;
   }
-  
+
   .nav-links a:hover {
     color: var(--primary);
   }
-  
+
   .nav-actions {
     display: flex;
     justify-content: flex-end;
