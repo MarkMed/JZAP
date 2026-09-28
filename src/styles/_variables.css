@@ -1,0 +1,55 @@
+:root {
+  /* Colors - JZAP Rebrand Tokens */
+  --color-void: #0f0817; 
+  --color-mystic: #2A0A22; 
+  --color-jzap: #CC3D97;
+  --color-jzap-dim: rgba(232, 18, 166, 0.4);
+  --color-text-primary: #F5F5F7;
+  --color-text-secondary: rgba(245, 245, 247, 0.9);
+  --color-error: #c53c53;
+
+  /* Aliasing original tokens to Rebrand Tokens */
+  --background: var(--color-void);
+  --on-background: var(--color-text-primary);
+  
+  --surface-container: rgba(42, 10, 34, 0.7);
+  --surface-container-low: #1d0717;
+  --surface-container-high: #3d0e31;
+  --surface-container-lowest: var(--color-void);
+  --surface-container-highest: #4b113c;
+
+  --on-surface: var(--color-text-primary);
+  --on-surface-variant: var(--color-text-secondary);
+  
+  --primary: var(--color-jzap);
+  --on-primary: #ffffff;
+  
+  --shadow-wave: var(--color-jzap);
+  --electric-flash: #e812a6;
+  
+  --tertiary-container: var(--color-jzap-dim);
+
+  /* Typography */
+  --font-brand: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Be Vietnam Pro', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Spacing */
+  --spacing-unit: 4px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 48px;
+  --spacing-gutter: 16px;
+  
+  --container-max: 1200px;
+
+  /* Radius */
+  --rounded-sm: 4px;
+  --rounded-DEFAULT: 8px;
+  --rounded-md: 12px;
+  --rounded-lg: 16px;
+  --rounded-xl: 24px;
+  --rounded-full: 9999px;
+}

@@ -1,0 +1,84 @@
+/* Container Utility */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--spacing-gutter);
+}
+
+/* Base Components defined in Rebrand */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: var(--rounded-DEFAULT);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background-color: rgba(204, 61, 151, 0.95);
+  color: var(--color-mystic);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--color-jzap);
+  box-shadow: 0 0 10px rgba(204, 61, 151, 0.4);
+  color: var(--color-mystic);
+}
+
+.btn-primary:active:not(:disabled) {
+  background-color: rgba(204, 61, 151, 0.2);
+  box-shadow: 0 0 8px rgba(204, 61, 151, 0.4);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-jzap);
+  border: 1px solid var(--color-jzap);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: rgba(204, 61, 151, 0.1);
+  box-shadow: 0 0 10px rgba(204, 61, 151, 0.4);
+}
+
+.btn-secondary:active:not(:disabled) {
+  background-color: rgba(204, 61, 151, 0.2);
+  box-shadow: 0 0 8px rgba(204, 61, 151, 0.4);
+}
+
+/* Card */
+.card {
+  background-color: var(--surface-container);
+  border-radius: var(--rounded-DEFAULT);
+  padding: var(--spacing-md);
+  border: 1px solid var(--surface-container-high);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: none;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-jzap);
+  box-shadow: 0px 0px 12px rgba(204, 61, 151, 0.2);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #ffaceb, var(--color-jzap));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
