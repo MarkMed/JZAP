@@ -7,10 +7,13 @@
       <span class="logo-dot"></span>
     </div>
     <nav class="nav-links">
+      <a href="#">Home</a>
       <a href="#services">Services</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#contact" class="btn btn-secondary">Contact Operator</a>
+      <a href="#factor">Our Factor</a>
     </nav>
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-secondary">Contact</a>
+    </div>
   </div>
 </header>
 
@@ -27,8 +30,8 @@
   }
   
   .nav-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
   }
   
@@ -36,6 +39,7 @@
     display: flex;
     align-items: baseline;
     gap: var(--spacing-xs);
+    justify-content: flex-start;
   }
   
   .logo-text {
@@ -56,20 +60,27 @@
   
   .nav-links {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: var(--spacing-lg);
   }
   
-  .nav-links a:not(.btn) {
+  .nav-links a {
     font-family: var(--font-brand);
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--on-surface-variant);
+    transition: color 0.2s ease;
   }
   
-  .nav-links a:not(.btn):hover {
+  .nav-links a:hover {
     color: var(--primary);
+  }
+  
+  .nav-actions {
+    display: flex;
+    justify-content: flex-end;
   }
 </style>
