@@ -1,0 +1,192 @@
+---
+---
+<section class="hero">
+  <div class="container hero-container">
+    <div class="hero-content">
+      <p class="slogan">A Dazzling Support for Your Project</p>
+      <h1 class="display-title">
+        Engineering the <span class="text-gradient">Shadow Wave</span> of the Web
+      </h1>
+      <p class="hero-description">
+        Over 8 years of high-precision Fullstack Development and DevOps. 
+        We build robust, scalable infrastructure that works relentlessly in the dark, 
+        so your business can shine in the light.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">BUFF YOUR PROJECT</a>
+        <a href="#expertise" class="btn btn-secondary">View Capabilities</a>
+      </div>
+    </div>
+    
+    <div class="hero-visual">
+      <div class="portal-ring">
+        <div class="portal-core">
+          <span class="status-indicator"></span>
+          <p class="status-text">System Active</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(168, 21, 155, 0.15) 0%, rgba(26, 4, 22, 0) 70%);
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+  }
+  
+  .slogan {
+    font-family: var(--font-brand);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: var(--spacing-md);
+    display: inline-block;
+    border: 1px solid var(--surface-container-high);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--rounded-sm);
+    background: var(--surface-container-lowest);
+  }
+  
+  .display-title {
+    font-size: 64px;
+    line-height: 1.05;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .hero-description {
+    font-size: 18px;
+    color: var(--on-surface-variant);
+    max-width: 90%;
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .hero-actions {
+    display: flex;
+    gap: var(--spacing-md);
+  }
+  
+  .hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .portal-ring {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    border: 1px dashed var(--outline-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: spin 30s linear infinite;
+  }
+  
+  .portal-ring::before {
+    content: '';
+    position: absolute;
+    inset: -20px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    border-top-color: var(--shadow-wave);
+    border-bottom-color: var(--electric-flash);
+    opacity: 0.3;
+    animation: spin 15s linear infinite reverse;
+  }
+  
+  .portal-core {
+    width: 240px;
+    height: 240px;
+    background: var(--surface-container);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm);
+    box-shadow: 0 0 40px rgba(168, 21, 155, 0.2);
+    animation: pulse 4s ease-in-out infinite alternate;
+  }
+  
+  .portal-core > * {
+    animation: spin 30s linear infinite reverse;
+  }
+  
+  .status-indicator {
+    width: 12px;
+    height: 12px;
+    background-color: var(--electric-flash);
+    border-radius: 50%;
+    box-shadow: 0 0 12px var(--electric-flash);
+  }
+  
+  .status-text {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--on-background);
+    letter-spacing: 0.05em;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  @keyframes pulse {
+    from { box-shadow: 0 0 20px rgba(168, 21, 155, 0.1); }
+    to { box-shadow: 0 0 60px rgba(160, 35, 200, 0.4); }
+  }
+
+  @media (max-width: 900px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    .hero-description {
+      margin: 0 auto var(--spacing-xl);
+    }
+    .hero-actions {
+      justify-content: center;
+    }
+    .portal-ring {
+      margin-top: var(--spacing-xl);
+      width: 280px;
+      height: 280px;
+    }
+    .portal-core {
+      width: 180px;
+      height: 180px;
+    }
+    .display-title {
+      font-size: 40px;
+    }
+  }
+</style>

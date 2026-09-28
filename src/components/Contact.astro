@@ -1,0 +1,90 @@
+---
+---
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="contact-card card">
+      <div class="contact-content">
+        <h2 class="display-title">I go where I'm needed.</h2>
+        <p class="contact-subtitle">Ask and you'll receive! Ready to buff your next big project?</p>
+        <div class="contact-actions">
+          <a href="mailto:operator@jzap.dev" class="btn btn-primary btn-large">Summon JZAP</a>
+          <div class="social-links">
+            <a href="#" class="social-link">LinkedIn</a>
+            <span class="separator">•</span>
+            <a href="#" class="social-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .contact-section {
+    padding: calc(var(--spacing-xl) * 2) 0;
+  }
+  
+  .contact-card {
+    background: linear-gradient(135deg, var(--surface-container-low) 0%, var(--surface-container-highest) 100%);
+    border: 1px solid var(--shadow-wave);
+    padding: calc(var(--spacing-xl) * 1.5);
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(168, 21, 155, 0.1);
+    border-radius: var(--rounded-md);
+  }
+
+  .display-title {
+    font-size: 64px;
+    line-height: 1.05;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .contact-subtitle {
+    font-size: 20px;
+    color: var(--on-surface-variant);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .contact-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+  }
+  
+  .btn-large {
+    font-size: 18px;
+    padding: 16px 40px;
+  }
+  
+  .social-links {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+  }
+  
+  .social-link {
+    font-family: var(--font-brand);
+    font-size: 16px;
+    color: var(--on-surface-variant);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  
+  .social-link:hover {
+    color: var(--primary);
+  }
+  
+  .separator {
+    color: var(--surface-container-high);
+  }
+
+  @media (max-width: 900px) {
+    .contact-card {
+      padding: var(--spacing-xl) var(--spacing-md);
+    }
+    .display-title {
+      font-size: 40px;
+    }
+  }
+</style>

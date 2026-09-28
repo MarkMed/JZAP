@@ -1,0 +1,75 @@
+---
+---
+<header class="navbar">
+  <div class="container nav-container">
+    <div class="logo">
+      <span class="logo-text">JZAP</span>
+      <span class="logo-dot"></span>
+    </div>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#contact" class="btn btn-secondary">Contact Operator</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: var(--spacing-md) 0;
+    background: rgba(26, 4, 22, 0.85);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+    border-bottom: 1px solid var(--surface-container-high);
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: baseline;
+    gap: var(--spacing-xs);
+  }
+  
+  .logo-text {
+    font-family: var(--font-brand);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: var(--on-background);
+  }
+  
+  .logo-dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--electric-flash);
+    border-radius: var(--rounded-full);
+    box-shadow: 0 0 8px var(--electric-flash);
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+  }
+  
+  .nav-links a:not(.btn) {
+    font-family: var(--font-brand);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--on-surface-variant);
+  }
+  
+  .nav-links a:not(.btn):hover {
+    color: var(--primary);
+  }
+</style>

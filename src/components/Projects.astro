@@ -1,0 +1,152 @@
+---
+---
+<section id="projects" class="projects-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Dazzled Projects</h2>
+      <p class="section-subtitle">Help arrived. Buffs applied.</p>
+    </div>
+    
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="card project-card">
+        <div class="project-header">
+          <span class="status-tag status-live"><span class="status-dot"></span> Live</span>
+          <h3 class="project-title">StaffLink</h3>
+        </div>
+        <p class="project-description">A comprehensive staff management system with automated scheduling, role-based access control, and performance analytics.</p>
+        <div class="project-spells">
+          <span class="spell-tag">React</span>
+          <span class="spell-tag">Node.js</span>
+          <span class="spell-tag">PostgreSQL</span>
+        </div>
+      </div>
+      
+      <!-- Project 2 -->
+      <div class="card project-card">
+        <div class="project-header">
+          <span class="status-tag status-dev"><span class="status-dot"></span> In Dev</span>
+          <h3 class="project-title">Celestial Casters</h3>
+        </div>
+        <p class="project-description">An immersive web platform for a strategic card game, featuring real-time multiplayer lobbies and complex state management.</p>
+        <div class="project-spells">
+          <span class="spell-tag">Vue 3</span>
+          <span class="spell-tag">WebSockets</span>
+          <span class="spell-tag">Redis</span>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card project-card">
+        <div class="project-header">
+          <span class="status-tag status-arch"><span class="status-dot"></span> Architecting</span>
+          <h3 class="project-title">FleetMan</h3>
+        </div>
+        <p class="project-description">Scalable microservices architecture for a logistics fleet tracking system. Designing event-driven data flows and high-availability databases.</p>
+        <div class="project-spells">
+          <span class="spell-tag">Go</span>
+          <span class="spell-tag">Kafka</span>
+          <span class="spell-tag">Docker</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .projects-section {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+  }
+  
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-lg);
+  }
+  
+  .project-header {
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .status-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-brand);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 4px 8px;
+    border-radius: var(--rounded-sm);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  
+  .status-live {
+    background: rgba(160, 35, 200, 0.15);
+    color: var(--electric-flash);
+    border: 1px solid rgba(160, 35, 200, 0.3);
+  }
+  .status-live .status-dot { background: var(--electric-flash); box-shadow: 0 0 6px var(--electric-flash); }
+  
+  .status-dev {
+    background: rgba(255, 172, 235, 0.15);
+    color: var(--primary);
+    border: 1px solid rgba(255, 172, 235, 0.3);
+  }
+  .status-dev .status-dot { background: var(--primary); }
+  
+  .status-arch {
+    background: rgba(162, 138, 151, 0.15);
+    color: var(--outline);
+    border: 1px solid rgba(162, 138, 151, 0.3);
+  }
+  .status-arch .status-dot { background: var(--outline); }
+  
+  .project-title {
+    font-size: 24px;
+    color: var(--on-surface);
+    margin: 0;
+  }
+  
+  .project-description {
+    font-size: 15px;
+    color: var(--on-surface-variant);
+    margin-bottom: var(--spacing-md);
+    flex-grow: 1;
+  }
+  
+  .project-spells {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-top: auto;
+  }
+  
+  .spell-tag {
+    font-size: 12px;
+    font-family: var(--font-body);
+    color: var(--on-surface-variant);
+    background: var(--surface-container-high);
+    padding: 4px 10px;
+    border-radius: var(--rounded-full);
+  }
+
+  @media (max-width: 900px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

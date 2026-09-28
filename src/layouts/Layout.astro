@@ -1,14 +1,14 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 
 interface Props {
 	title?: string;
 	description?: string;
 }
 
-const { 
-  title = "JZAP | Critical Operational Support", 
-  description = "High-stakes IT solutions, DevOps and Fullstack Development. Over 8 years of operational excellence." 
+const {
+	title = "JZAP | Dazzling Support",
+	description = "High-stakes IT solutions, DevOps and Fullstack Development. Over 8 years of operational excellence.",
 } = Astro.props;
 ---
 
@@ -20,7 +20,7 @@ const {
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		
+
 		<!-- SEO -->
 		<title>{title}</title>
 		<meta name="description" content={description} />
