@@ -9,8 +9,10 @@
       </div>
     </div>
     <div class="about-content">
-      <h2 class="section-title align-left">About JZAP</h2>
-      <p class="section-subtitle align-left">The story behind our supportive mindset.</p>
+      <div class="section-header">
+        <h2 class="section-title">About JZAP</h2>
+        <p class="section-subtitle">The story behind our supportive mindset.</p>
+      </div>
       <div class="about-text">
         <p>I don't just write code; I provide <strong>critical operational support</strong>. Throughout 8 years in the trenches of IT and Fullstack Development, I learned that the best engineers aren't just solo heroes—they are the force multipliers that make the entire team succeed.</p>
         <p>The "Shadow Wave" philosophy was born from this realization. Like a dedicated healer in a raid, I anticipate system failures before they happen, buff the architecture for peak performance, and design interfaces that seamlessly guide the user.</p>
@@ -84,26 +86,7 @@
     font-weight: 500;
   }
   
-  .align-left {
-    text-align: left;
-    justify-content: flex-start;
-  }
 
-  .section-title {
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-sm);
-    color: var(--on-background);
-  }
-
-  .section-subtitle {
-    font-size: 18px;
-    color: var(--on-surface-variant);
-    max-width: 600px;
-    margin: var(--spacing-md) auto 0;
-  }
 
   @media (max-width: 900px) {
     .about-container {
@@ -111,9 +94,6 @@
       text-align: center;
     }
     
-    .about-content .align-left {
-      text-align: center;
-      justify-content: center;
-    }
+
   }
 </style>
